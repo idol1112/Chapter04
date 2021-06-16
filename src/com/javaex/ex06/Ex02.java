@@ -11,8 +11,9 @@ public class Ex02 {
 		
 		while(lottoSet.size() < 6) {
 			int num = (int)(Math.random()*45)+1;
-			System.out.println(num);
+			
 			lottoSet.add(num); //중복체크 
+			System.out.println(lottoSet.size() + "  " + num);
 		}
 		
 		System.out.println("---------------------------");
