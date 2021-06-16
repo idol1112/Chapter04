@@ -28,8 +28,24 @@ public class PointApp {
 		//중복체크가 되는가???  ---> 중복의 정의가 필요하다
 		Point p04 = new Point(3,6);
 		pSet.add(p04);
+		System.out.println("----");
 		System.out.println(pSet.toString());
+		System.out.println("----");
 		
+		
+		
+		//Point 비교 -->equals()
+		System.out.println(p02.equals(p04)); //equals() 로직
+		System.out.println(p02==p04); //주소값 비교
+		
+		System.out.println(p01.equals(p04)); //equals() 로직
+		System.out.println(p01==p04); //주소값 비교
+		
+		//hashCode
+		System.out.println(p01.hashCode());
+		System.out.println(p02.hashCode());
+		System.out.println(p03.hashCode());
+		System.out.println(p04.hashCode());
 		
 	}
 
